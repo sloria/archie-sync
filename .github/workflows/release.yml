@@ -30,3 +30,5 @@ jobs:
         uses: changesets/action@8488615a623b1b9c987934bb89eae8af6a946ac1 # v2.1.1
         with:
           publish-script: npm run release
+        env:
+          NPM_CONFIG_PROVENANCE: "true"
