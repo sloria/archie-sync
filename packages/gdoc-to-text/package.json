@@ -1,0 +1,35 @@
+{
+  "name": "gdoc-to-text",
+  "version": "1.0.0",
+  "description": "Convert a Google Docs API response into plain text",
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "npm run build",
+    "test": "node --test test/*.test.ts"
+  },
+  "keywords": [
+    "google-docs",
+    "markdown"
+  ],
+  "author": "Steven Loria",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sloria/archie-sync.git",
+    "directory": "packages/gdoc-to-text"
+  }
+}

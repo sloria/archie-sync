@@ -1,0 +1,22 @@
+{
+  "name": "root",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build -w gdoc-to-text && npm run build -w archie-sync",
+    "test": "npm run build && npm test --workspaces",
+    "lint": "npm run build && biome check . && tsc -p packages/gdoc-to-text && tsc -p packages/archie-sync",
+    "lint:fix": "biome check --write .",
+    "release": "npm run build && changeset publish"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.4",
+    "@changesets/cli": "^2.29.5",
+    "@types/node": "26.2.0",
+    "fast-check": "^4.9.0",
+    "typescript": "^6.0.3"
+  }
+}
