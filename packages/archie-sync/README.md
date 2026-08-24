@@ -7,10 +7,14 @@ Useful for using Google Docs as a CMS for a static site.
 
 ```sh
 # Pull from Google Doc. Each tab becomes a JSON file in --dir
-npx archie-sync pull  --dir src/locales
+DOC_ID=... \
+GOOGLE_CREDENTIALS_BASE64=... \
+npx archie-sync pull --dir src/locales
 
 # Push JSON to Google Doc
-npx archie-sync push  --dir src/locales
+DOC_ID=... \
+GOOGLE_CREDENTIALS_BASE64=... \
+npx archie-sync push --dir src/locales
 ```
 
 ## Initial setup
