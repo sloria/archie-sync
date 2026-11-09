@@ -13,9 +13,9 @@
     "release": "npm run build && changeset publish"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.15",
+    "@biomejs/biome": "2.6.6",
     "@changesets/cli": "3.0.3",
-    "@types/node": "26.6.3",
+    "@types/node": "26.6.6",
     "fast-check": "4.10.2",
     "typescript": "7.0.2"
   }
