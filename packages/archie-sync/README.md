@@ -125,6 +125,6 @@ const tab = doc.tabs.find((t) => t.tabProperties.title === "en");
 const values = parseTab(tab.documentTab);
 
 // And back the other way: JSON object -> ArchieML text
-const jsonData = JSON.parse(readFileSync("src/locales/en.json", "utf8"))
+const jsonData = JSON.parse(readFileSync("src/locales/en.json", "utf8"));
 stringify(jsonData);
 ```
